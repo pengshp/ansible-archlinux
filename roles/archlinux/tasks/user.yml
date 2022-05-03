@@ -10,7 +10,7 @@
 
 - name: create scripts directory
   file:
-    name: /home/{{ archlinux_username }}/bin
+    name: /home/{{ archlinux_username }}/.local/bin
     state: directory
     owner: "{{ archlinux_username }}"
     group: users

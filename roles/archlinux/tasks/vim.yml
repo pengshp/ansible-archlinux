@@ -1,16 +1,11 @@
 ---
-- name: remove vim minimal package
+- name: install vim minimal package
   pacman:
     name: vim
-    state: absent
+    state: present
     force: true
   become: true
   ignore_errors: true  # noqa ignore-errors
-
-- name: install vim
-  pacman:
-    name: gvim
-  become: true
 
 - name: create vim autoload directory
   file:
@@ -32,7 +27,7 @@
 - name: configure .vimrc
   copy:
     src: vimrc
-    dest: /home/{{ archlinux_username }}/.vimrc
+    dest: /home/{{ archlinux_username }}/.vim/vimrc
     owner: "{{ archlinux_username }}"
     group: users
     mode: 0644

@@ -4,7 +4,7 @@
     name:
       - python
       - python-pip
-      - python-virtualenv
+      - python-pipenv
   become: true
 
 - name: install flake8 for python 3

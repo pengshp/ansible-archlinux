@@ -1,3 +1,15 @@
 {
-  "userns-remap": "default"
+    "registry-mirrors": [
+        "https://mirror.ccs.tencentyun.com"
+    ],
+    "insecure-registries": [],
+    "log-driver": "json-file",
+    "log-opts": {
+        "max-size": "1m",
+        "max-file": "2",
+        "labels": "production_status",
+        "env": "os,customer"
+    },
+    "experimental": true,
+    "ipv6": false
 }

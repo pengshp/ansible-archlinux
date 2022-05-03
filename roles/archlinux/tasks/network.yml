@@ -4,8 +4,6 @@
     name:
       - dhcpcd
       - ifplugd
-      - netctl
-      - openvpn
-      - wireguard-tools
-      - wpa_supplicant
+      - iwd
+      - networkmanager-iwd
   become: true

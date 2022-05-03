@@ -6,7 +6,8 @@
       - i3-wm
       - i3lock
       - i3status
-      - dmenu
+      - dmemu
+      - rofi
   become: true
 
 - name: create i3 configuration directory

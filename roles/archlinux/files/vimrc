@@ -17,7 +17,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'dense-analysis/ale'
 
 " YouCompleteMe completions
-Plug 'ycm-core/YouCompleteMe', {'do': './install.py --clang-completer --go-completer'}
+Plug 'ycm-core/YouCompleteMe', {'do': './install.py --go-completer'}
 
 " File tree
 " Use :NERDTree to open the tree
@@ -77,9 +77,6 @@ Plug 'dharmab/vim-ripgrep'
 
 " Better JSON
 Plug 'elzr/vim-json'
-
-" Jsonnet syntax highlighting and autoformatting
-Plug 'google/vim-jsonnet'
 
 " Prometheus rules syntax highlighting
 Plug 'skreuzer/vim-prometheus'

@@ -5,6 +5,7 @@
       - aria2
       - bcc-tools
       - bind-tools
+      - htop
       - curl
       - gvfs
       - htop
@@ -30,7 +31,9 @@
 - name: install applications
   pacman:
     name:
-      - chromium
+      - firefox
+      - firefox-i18n-zh-cn
+      - google-chrome
       - evince
       - mpv
       - pcmanfm
