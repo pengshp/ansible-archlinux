@@ -28,6 +28,8 @@
 - import_tasks: kitty.yml
 - import_tasks: alacritty.yml
 - import_tasks: applications.yml
+# Install Fcitx5
+- import_tasks: fcitx5.yml
 # Install some programming languages
 - import_tasks: c-family.yml
 - import_tasks: golang.yml
